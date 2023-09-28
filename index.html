@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Profile_Nadia</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">MY INVENTORY</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+<!-- Artikel and Form -->
+<div class="container mt-4">
+    <div class="card">
+        <div class="card mb-0" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="poto.jpg" class="img-fluid rounded-start" alt="poto profile">
+                </div>
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h5 class="card-title" id="outname">NADIA</h5>
+                        <p class="card-text" id="role">Web Developer</p>
+                        <div class="row row-cols-auto">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary" onclick="editData()">Edit</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-success" onclick="showConfirmation()">Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="card">
+        <form id="profileForm">
+            <div class="mb-3 container">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" required>
+            </div>
+
+            <div class="mb-3 container">
+                <label for="role" class="form-label">Role</label>
+                <input type="text" class="form-control" id="role" name="role" placeholder="Web Developer">
+            </div>
+
+            <div class="mb-3 container">
+                <label for="availability" class="form-label">Availability</label>
+                <input type="text" class="form-control" id="availability" name="availability" placeholder="Full Time">
+            </div>
+
+            <div class="mb-3 container">
+                <label for="usia" class="form-label">Usia</label>
+                <input type="text" class="form-control" id="usia" name="usia" placeholder="19">
+            </div>
+
+            <div class="mb-3 container">
+                <label for="lokasi" class="form-label">Lokasi</label>
+                <input type="text" class="form-control" id="lokasi" name="lokasi" placeholder="Bandar Lampung">
+            </div>
+
+            <div class="mb-3 container">
+                <label for="pengalaman" class="form-label">Years Experience</label>
+                <input type="text" class="form-control" id="pengalaman" name="pengalaman" placeholder="2">
+            </div>
+
+            <div class="mb-3 container">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="ntama8709@gamail.com">
+            </div>
+
+            <div class="d-grid gap-0">
+                <button type="submit" class="btn btn-success" style="display: none;">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- End Form -->
+
+<!-- Display Saved Data -->
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Saved Data</h5>
+            <div id="savedData"></div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+
+<!-- Tambahkan tautan ke Bootstrap JS dan jQuery (diperlukan untuk beberapa fitur Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
